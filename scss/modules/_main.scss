@@ -1,0 +1,35 @@
+body {
+  background-color: aliceblue;
+  color: darkslategray;
+  font-family:'montserratlight', sans-serif;
+}
+
+h1 {
+  @include h1-style();
+}
+
+p {
+  margin: 10px 0;
+}
+
+.page__container {
+  @include container(100%);
+  
+  .content__container {
+    @include span(18 at 7 of 24);
+    //background: thistle;
+    padding: 28px 30px;
+  }
+}
+
+
+
+
+//Media queries - Mobile Layout: 320px
+@media only screen and (max-width: 767px) {
+  @include layout($small-screen);
+  
+  .page__container {
+    @include container();
+  }
+}

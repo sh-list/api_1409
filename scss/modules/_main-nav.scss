@@ -1,0 +1,43 @@
+.main-navigation {
+  @include span(6 of 24);
+  background: rgba($primary-color, 1);
+  font-family: 'montserratregular';
+  font-size: 14px;
+  height: 1400px;
+  
+  ul {
+    border-top: 1px solid rgba(whitesmoke, 0.4);
+    //text-transform: uppercase;
+    letter-spacing: 0.1em;
+    
+    li {
+      background: lighten($primary-color, 5%);
+      position: relative;
+      border-bottom: 1px solid rgba(whitesmoke, 0.4);
+      
+      &:hover {
+        border-bottom: 1px solid $highlight-color;
+      }
+      
+      a {
+        color: whitesmoke;
+        display: block;
+        padding: 20px 30px;
+        
+        &:hover {
+          background-color: rgba(aliceblue, 0.2);
+          color: $highlight-color;
+        }
+      }
+    }
+    
+    li:hover:before {
+      content: ' ';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid $highlight-color;
+    }
+  }
+}
