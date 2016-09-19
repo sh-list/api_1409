@@ -32,3 +32,8 @@
     border-color: whitesmoke;
   }
 }
+
+
+.get__key__button {
+  @include button-standard();
+}

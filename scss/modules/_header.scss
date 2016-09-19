@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  //border-bottom: 20px solid lightslategray;
+  //border-bottom: 20px solid black;
   
   .api__logo__id {
     //background-color: seashell;
@@ -47,5 +47,16 @@
   
   .header__api__wrapper {
     padding: 0 10px;
+    
+    .api__logo__id {
+      
+      h1 {
+        @include h1-style-small();
+      }
+      
+      .list__logo__id:before {
+        font-size: 4em;
+      }
+    }
   }
 }

@@ -29,7 +29,20 @@ p {
 @media only screen and (max-width: 767px) {
   @include layout($small-screen);
   
+  h1 {
+    @include h1-style-small();
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  
   .page__container {
     @include container();
+    
+    .content__container {
+      @include span(4 at 3 of 6);
+      padding: 22px 10px;
+    }
   }
 }

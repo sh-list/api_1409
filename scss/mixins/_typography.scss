@@ -1,7 +1,19 @@
 @mixin h1-style() {
   //color: $highlight-color;
+  //margin-bottom: 20px;
   font-family: 'montserratregular';
   font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+@mixin h1-style-small() {
+  //color: $highlight-color;
+  //margin-bottom: 20px;
+  font-family: 'montserratregular';
+  font-size: 18px;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.1em;
