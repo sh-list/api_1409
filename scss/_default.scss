@@ -46,7 +46,17 @@ a, li, button {
   border: 0;
   outline: 0;
   box-shadow: none;
+  
+  &:hover {
+    transition: color 0.2s;
+  }
 }
+
+/*
+*:hover {
+  transition: 0.2s;
+}*/
+
 
 
 

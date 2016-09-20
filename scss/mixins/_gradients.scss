@@ -1,11 +1,11 @@
 // Background Gradient: Top to Bottom
 @mixin bg-gradient-t2b($start-colour, $end-colour) {
     background-color: $start-colour;
-    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
-    background-image: -webkit-linear-gradient(to bottom, $start-colour, $end-colour);
-    background-image:    -moz-linear-gradient(to bottom, $start-colour, $end-colour);
-    background-image:     -ms-linear-gradient(to bottom, $start-colour, $end-colour);
-    background-image:      -o-linear-gradient(to bottom, $start-colour, $end-colour);
-    background-image:         linear-gradient(to bottom, $start-colour, $end-colour);
-    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour 60%), to($end-colour));
+    background-image: -webkit-linear-gradient(to bottom, $start-colour 60%, $end-colour);
+    background-image:    -moz-linear-gradient(to bottom, $start-colour 60%, $end-colour);
+    background-image:     -ms-linear-gradient(to bottom, $start-colour 60%, $end-colour);
+    background-image:      -o-linear-gradient(to bottom, $start-colour 60%, $end-colour);
+    background-image:         linear-gradient(to bottom, $start-colour 60%, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour 60%}', end-colourStr='#{$end-colour}');
 }

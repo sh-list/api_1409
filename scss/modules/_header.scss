@@ -2,7 +2,7 @@
   background-color: $primary-color;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 10px 30px 0 30px;
   //border-bottom: 20px solid black;
   
   .api__logo__id {
@@ -22,7 +22,8 @@
     
     
     .list__logo__id {
-      color: $highlight-color;
+      color: whitesmoke;
+      //transition: all 0.2s;
     }
     
     .list__logo__id:before {
@@ -34,8 +35,8 @@
   }
   
   .api__logo__id h1:hover, .list__logo__id:hover {
-    color: whitesmoke;
-    border-color: whitesmoke;
+    color: $highlight-color;
+    //border-color: whitesmoke;
   }
 }
 
