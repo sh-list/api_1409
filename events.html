@@ -47,8 +47,43 @@
                         
             
             <div class="content__container">
-                <h1>Search events</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>                
+                <h1>Filter events</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>
+                
+                <form class="api__search__form" novalidate="novalidate">
+                    <div class="input__container">
+                        <input id="event name" type="text" required="required" />
+                        <label for="event name">event name</label>
+                        <div class="input__underline"> </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input id="location" type="text" required="required" />
+                        <label for="location">location</label>
+                        <div class="input__underline"> </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input id="modified since" type="text" required="required" />
+                        <label for="modified since">modified since</label>
+                        <div class="input__underline"> </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input id="min date" type="text" required="required" />
+                        <label for="min date">min date</label>
+                        <div class="input__underline"> </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input id="max date" type="text" required="required" />
+                        <label for="max date">max date</label>
+                        <div class="input__underline"> </div>
+                    </div>                                                                                                                    
+                    
+                    <button class="api__button get__key__button"><span>Search</span></button>                                      
+                </form>                                           
+                           
             </div>
             
             

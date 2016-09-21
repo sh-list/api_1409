@@ -10,11 +10,16 @@
   transition: all 0.5s;
   
   &:hover {
-    //@include box-shadow();
-    //background-color: rgba($highlight-color, 0.4);
     color: $highlight-color;
     border-color: $highlight-color;
   }  
+}
+
+
+@mixin button-standard-small(){
+  @include button-standard;
+  padding: 3px 5px;
+  font-size: 0.8em;
 }
 
 
@@ -31,6 +36,13 @@
     color: $highlight-color;
     border-color: $highlight-color;
   }
+}
+
+
+@mixin button-action-small() {
+  @include button-action();
+  padding: 3px 8px;
+  font-size: 0.8em;
 }
 
 
@@ -69,5 +81,19 @@
   &:hover span:after {
     opacity: 1;
     transform: translateX(12px);
+  }
+}
+
+
+
+
+//Media queries - Mobile Layout: 320px
+@media only screen and (max-width: 767px) {
+  .login__button {
+    @include button-standard-small();
+  }
+  
+  .get__key__button {
+    @include button-action-small();
   }
 }

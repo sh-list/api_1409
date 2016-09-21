@@ -33,3 +33,7 @@ node_modules
 ############
 .sass-cache/
 *.css.map
+
+# CSS #
+############
+*.css

@@ -1,0 +1,82 @@
+.api__search__form {
+  //background-color: plum;
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  
+  .input__container {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+    input {
+      background-color: transparent;
+      color: darkslategray;
+      width: 100%;
+      height: 40px;
+      font-family: 'montserratlight' sans-serif;
+      font-size: 1.2em;
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      
+      &:focus {
+        color: $highlight-color;
+      }
+    }
+    
+    label {
+      color: silver;
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 40px;
+      transition: all 0.3s ease 0.1s;
+    }
+    
+    input:focus ~ label {
+      color: darkslategray;
+      transform: translate(-10%, -70%) scale(0.80);
+    }
+    
+    input:valid ~ label {
+      transform: translate(-10%, -70%) scale(0.80);
+    }
+    
+    .input__underline {
+      background: silver;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+    }
+    
+    .input__underline:before {
+      background: $highlight-color;
+      content: ' ';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      transition: all 0.3s ease 0.1s;
+    }
+    
+    input:focus ~ .input__underline:before {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+//Media queries - Mobile Layout: 320px
+@media only screen and (max-width: 767px) {
+  .api__search__form {
+    
+    .input__container {
+      font-size: 0.8em;
+    }
+  }
+}
