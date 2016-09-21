@@ -42,6 +42,7 @@ p {
     
     .content__container {
       @include span(4 at 3 of 6);
+      //width: 100%;
       padding: 22px 10px;
     }
   }

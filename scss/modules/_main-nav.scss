@@ -88,7 +88,9 @@
 @media only screen and (max-width: 767px) {
   .main-navigation {
     @include span(2 of 6);
-    font-size: 12px;
+    //position: absolute;
+    //margin-left: -400px;
+    font-size: 11px;
     
     ul {
       

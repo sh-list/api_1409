@@ -1,0 +1,29 @@
+.price__table__wrapper {
+  margin-top: 40px;
+  border-left: 1px solid silver;
+  border-top: 1px solid silver;
+  
+  .price__table__content {
+    //background-color: rgba($highlight-color, 0.1);
+    
+    .price__table__row {
+      //background-color: tan;
+      display: flex;
+      flex-direction: row;
+      //width: 33.3333%;
+      
+      .price--table--heading {
+        font-family: 'montserratregular' sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      
+      .price--table--cell {
+        width: 33.3333%;
+        padding: 20px;
+        border-right: 1px solid silver;
+        border-bottom: 1px solid silver;
+      }
+    }
+  }
+}

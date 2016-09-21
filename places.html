@@ -47,8 +47,24 @@
                         
             
             <div class="content__container">
-                <h1>Search places</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>                
+                <h1>Filter places</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>
+                
+                <form class="api__search__form" novalidate="novalidate">
+                    <div class="input__container">
+                        <input id="name" type="text" required="required" />
+                        <label for="name">name</label>
+                        <div class="input__underline"> </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input id="town" type="text" required="required" />
+                        <label for="town">town</label>
+                        <div class="input__underline"> </div>
+                    </div>                    
+                    
+                    <button class="api__button get__key__button"><span>Search</span></button>                                      
+                </form>                                           
             </div>
             
             
