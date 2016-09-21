@@ -1,0 +1,35 @@
+.api__dashboard {
+  //background: bisque;
+  margin-top: 120px;
+  padding-top: 30px;
+  border-top: 1px solid silver;
+  
+  progress {
+    background-color: rgba($primary-color, 0.2);
+    margin-top: 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;   
+  }
+  
+  progress[value] {
+    width: 100%;
+    height: 30px;
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: rgba($primary-color, 0.005);
+  }
+  
+  progress[value]::-webkit-progress-value {
+    background-color: rgba($primary-color, 0.3);
+  }
+  
+  progress[value]::-moz-progress-bar {
+    background-color: rgba($primary-color, 0.3);
+  }    
+}

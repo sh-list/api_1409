@@ -84,6 +84,20 @@
 
 
 
+//Media queries - Tablet Layout: 768px
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-navigation {
+    
+    .footer__info {
+      font-size: 8px;
+    }
+  }
+}
+
+
+
+
 //Media queries - Mobile Layout: 320px
 @media only screen and (max-width: 767px) {
   .main-navigation {
@@ -99,6 +113,29 @@
         a {
           padding: 15px 10px;
         }
+        
+        .api__search:before {
+          margin-right: 2px;
+          padding: 2px 4px;
+          font-size: 9px;
+        }
+      }
+    }
+    
+    .footer__info {
+      position: relative;
+      font-size: 8px;
+      margin-top: 30px;
+      padding: 10px;
+      
+      a {
+        //background-color: lemonchiffon;
+        display: inline;
+        line-height: 2em;
+      }
+      
+      #link__separator {
+        display: none;
       }
     }
   }
