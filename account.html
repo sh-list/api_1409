@@ -16,7 +16,7 @@
             <header class="header__api__wrapper">
                 
                 <div class="api__logo__id">
-                    <a href="index.html" class="list__logo__id" title="List Data Explorer"><h1>API Data Explorer</h1></a>
+                    <a href="index.html" class="list__logo__id" title="List Data Explorer"><h1>API</h1></a>
                 </div>
                 
                 
@@ -51,10 +51,26 @@
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>
                 
-                <div class="api__dashboard">
-                    <h1>Your current limit</h1>
-                        <progress value="400" max="1000"> </progress>
-                </div>                              
+                <div class="api__dashboard__wrapper">
+                    <h1>Your dashboard</h1>
+                    
+                    <div class="limit__graphs__wrapper">
+                        <div class="api__call__limit">
+                            <h3>Current Call Limit</h3>
+                            <progress value="400" max="1000"> </progress>
+                        </div>
+                        
+                        <div class="api__dev__limit">                       
+                            <h3>Development Key Call</h3>
+                            <progress value="600" max="1000"> </progress>
+                        </div> 
+                        
+                        <div class="api__live__limit">                       
+                            <h3>Live Key Call</h3>
+                            <progress value="200" max="1000"> </progress>
+                        </div>    
+                    </div> <!--- limit__graphs__wrapper div class --->
+                </div> <!--- api__dashboard div class --->             
             </div>
             
             

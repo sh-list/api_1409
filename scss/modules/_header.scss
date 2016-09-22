@@ -6,20 +6,44 @@
   //border-bottom: 20px solid black;
   
   .api__logo__id {
-    //background-color: seashell;
+    //background-color: tan;
     position: relative;
     display: inline-block;
-    padding: 10px 0 20px 0;
+    //padding: 10px 0 20px 0;
+    padding: 30px 0 30px 90px;
+    //padding: 70px 0 20px 15px;
     line-height: 1;
     
 
     h1 {
       @include h1-style();
-      margin-top: 75px;
-      padding-top: 2px;
-      //border-top: 1px solid rgba($highlight-color, 0.4);
-    }   
+      position: relative;
+      //margin-top: 75px;
+      //padding-top: 2px;
+      //border-top: 1px solid whitesmoke;
+    }
     
+/*
+    h1:before {
+      background: whitesmoke;
+      content: ' ';
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+    }
+    
+    h1:after {
+      background: whitesmoke;
+      content: ' ';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+    } 
+*/    
     
     .list__logo__id {
       color: whitesmoke;
@@ -27,8 +51,11 @@
     }
     
     .list__logo__id:before {
-      position: absolute;
+      //background: coral;
       content: '\e904';
+      position: absolute;
+      top: 0;
+      left: 0;      
       font-family: 'listicons';
       font-size: 5em;
     }    
@@ -36,7 +63,7 @@
   
   .api__logo__id h1:hover, .list__logo__id:hover {
     color: $highlight-color;
-    //border-color: whitesmoke;
+    //border-color: $highlight-color;
   }
 }
 
