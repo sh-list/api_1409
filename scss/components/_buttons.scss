@@ -26,7 +26,7 @@
 @mixin button-action() {
   background-color: transparent;
   color: $primary-color;
-  padding: 6px 10px;
+  padding: 6px 14px;
   margin: 20px 0;
   font-size: 1em;
   border: 1px solid $primary-color;
@@ -81,6 +81,58 @@
   &:hover span:after {
     opacity: 1;
     transform: translateX(12px);
+  }
+}
+
+
+.upgrade__button {
+  @include button-standard();
+  background-color: saturate(cadetblue, 30%);
+  color: whitesmoke;
+  width: 205px;
+  font-family: 'montserratregular', sans-serif;
+  text-shadow: 1px 1px 1px lightslategray;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-color: saturate(cadetblue, 30%);
+  
+  &:hover {
+    background-color: $highlight-color;
+    color: whitesmoke;
+    border-color: $highlight-color;
+  }
+}
+
+
+.copy__button {
+  @include button-standard();
+  background-color: $highlight-color;
+  color: whitesmoke;
+  float: right;
+  width: 100px;
+  border-color: $highlight-color;
+  
+  &:hover {
+    background-color: darken($highlight-color, 15%);
+    color: whitesmoke;
+    border-color: darken($highlight-color, 15%);
+  }
+}
+
+
+.revoke__button {
+  @include button-standard();
+  background-color: indianred;
+  color: whitesmoke;
+  float: right;
+  width: 100px;
+  //margin-left: 5px;
+  border-color: indianred;
+  
+  &:hover {
+    background-color: firebrick;
+    color: whitesmoke;
+    border-color: firebrick;
   }
 }
 

@@ -5,10 +5,8 @@
   border-top: 1px solid silver;
   
   .limit__graphs__wrapper {
-    @include span(9 at 7 of 18);
+    //@include span(9 at 7 of 18);
     //background: plum;
-    //float: left;
-    //width: 50%;
     padding-right: 30px;
     
     h2 {
@@ -45,8 +43,7 @@
   }
   
   .limit__keys__wrapper {
-    @include span(9 at 10 of 18);
-    //float: right;
+    //@include span(9 at 10 of 18);
   }
   
   progress {

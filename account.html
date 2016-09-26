@@ -33,14 +33,13 @@
                     <li><a href="search.html" class="api__search"> /search</a></li>
                     <li><a href="events.html" class="api__search"> /events</a></li>
                     <li><a href="places.html" class="api__search"> /places</a></li>
-                    <li><a href="keys.html">manage keys</a></li>
                     <li><a href="documentation.html">documentation</a></li>
                     <li><a href="pricing.html">pricing</a></li>
                     <li><a href="account.html">your account</a></li>                                       
                </ul>
                
                <div class="footer__info">
-                   <a href="#">Terms &amp; Conditions</a>
+                   <a href="https://www.list.co.uk/terms/">Terms &amp; Conditions</a>
                    <span id="link__separator">&nbsp;|&nbsp;</span>
                    <a href="https://www.list.co.uk/">The List</a>
                </div>               
@@ -49,28 +48,57 @@
             <div class="content__container">
                 <h1>Your User Account</h1>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>
-                
-                <div class="api__dashboard__wrapper">
-                    <h1>Your dashboard</h1>
+                <p>You currently have a <strong>FREE</strong> account.</p>
+                <p>It is limited to 1,000 requests per month.</p>
+
+                <div class="api__account__wrapper">
                     
-                    <div class="limit__graphs__wrapper">
+                    <div class="api__usage__wrapper">
+                        
                         <div class="api__call__limit">
-                            <h3>Current Call Limit</h3>
-                            <progress value="400" max="1000"> </progress>
+                            <h2>Your current account usage:</h2>
+                            <progress value="400" max="1000" class="progress--usage"> </progress>
+                            
+                            <button class="api__button upgrade__button"><span>Upgrade</span></button>                            
                         </div>
                         
-                        <div class="api__dev__limit">                       
-                            <h3>Development Key Call</h3>
-                            <progress value="600" max="1000"> </progress>
+                    </div> <!--- api__usage__wrapper div class --->
+                        
+                        
+                    <div class="api__keys__wrapper">
+
+                        <h1>Your Keys</h1>                        
+                        
+                        <div class="api__saved__key">                       
+                            <h2>Your current key usage:</h2>
+                            <h3>User Key No.1.</h3>
+                            <progress value="600" max="1000" class="progress--usage key--usage"> </progress>
+                            <span class="creation--date">creation date: 06.06.2016</span>
+                            
+                            <input id="paste key" type="text" placeholder="paste your key here" class="api__key__input" />
+                            
+                            <button class="api__button revoke__button"><span>Revoke</span></button>
+                            <button class="api__button copy__button"><span>Copy</span></button>
+                            
                         </div> 
                         
-                        <div class="api__live__limit">                       
-                            <h3>Live Key Call</h3>
-                            <progress value="200" max="1000"> </progress>
-                        </div>    
-                    </div> <!--- limit__graphs__wrapper div class --->
-                </div> <!--- api__dashboard div class --->             
+                        <div class="api__saved__key">
+                            <h3>User Key No.2.</h3>                      
+                            <progress value="200" max="1000" class="progress--usage key--usage--1"> </progress>
+                            <span class="creation--date">creation date: 08.10.2016</span>
+
+                            <input id="paste key" type="text" placeholder="paste your key here" class="api__key__input" />
+                            
+                            <button class="api__button revoke__button"><span>Revoke</span></button>
+                            <button class="api__button copy__button"><span>Copy</span></button>
+                        </div>
+                        
+                        <button class="api__button get__key__button"><span>Get New Key</span></button>
+                        
+                    </div>  <!--- api__keys__wrapper div class --->    
+                                              
+                </div> <!--- api__account__wrapper div class --->             
+                
             </div>
             
             

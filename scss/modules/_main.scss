@@ -11,7 +11,13 @@ h1 {
 }
 
 p {
-  margin: 10px 0;
+  margin: 14px 0 10px 0;
+  line-height: 1.4em;
+}
+
+strong {
+  letter-spacing: 0.1em;
+  margin: 0 2px;
 }
 
 .page__container {
