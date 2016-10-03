@@ -37,39 +37,39 @@
         font-size: 14px;
       }
       
-      .api__key__input {
-        //@include span(15 at 7 of 18);
-        background-color: rgba($highlight-color, 0.1);
-        color: lightslategray; // styling for placeholder text
-        opacity: 0.6; // styling for placeholder text
-        //background-color: transparent;
-        width: 83.33333%;
-        height: 35px;
-        padding-left: 10px;
-        margin-top: 20px;
-        margin-right: 10px;
-        outline: 0;
-        border: 0;
-        box-shadow: none;
-        font-size: 14px;
-        //border-left: 1px solid silver;
-        //border-bottom: 1px solid silver;        
-      }
-      
-      ::placeholder {
-        //color: tomato;
-        //opacity: 0.3;
-      }
-      
-      ::-webkit-input-placeholder {
-        //color: tomato;
-        //padding-left: 10px;
-      }
-      
-      ::-moz-placeholder {
-        //color: tomato;
-        //padding-left: 10px;
-      }        
+      .api__key__input__wrapper {
+        //background-color: plum;
+        position: relative;
+        
+        .api__key__input {
+          background-color: rgba($highlight-color, 0.2);
+          color: lightslategray; // styling for placeholder text
+          opacity: 0.6; // styling for placeholder text
+          width: calc(100% - 220px);
+          height: 35px;
+          padding-left: 10px;
+          margin-top: 20px;
+          outline: 0;
+          border: 0;
+          box-shadow: none;
+          font-size: 14px;
+        }
+        
+        ::placeholder {
+          //color: tomato;
+          //opacity: 0.3;
+        }
+        
+        ::-webkit-input-placeholder {
+          //color: tomato;
+          //padding-left: 10px;
+        }
+        
+        ::-moz-placeholder {
+          //color: tomato;
+          //padding-left: 10px;
+        }        
+      }      
     }    
   }
   
@@ -137,4 +137,52 @@
       background-color: rgba($primary-color, 0.3);
     }  // for styling the value bar in Chrome
   } 
+}
+
+
+
+
+//Media queries - Mobile Layout: 320px
+@media only screen and (max-width: 767px) {
+  .api__account__wrapper {
+    margin-top: 0;
+    
+    .api__keys__wrapper {
+      
+      .api__saved__key {
+        
+        h3 {
+          //color: lime;
+          font-size: 16px;
+        }
+        
+        .creation--date {
+          font-size: 11px;
+        }
+        
+        .api__key__input__wrapper {
+          
+          .api__key__input {
+            width: calc(100% - 140px);
+            height: 32px;
+          }
+        }
+      }
+    }
+    
+    .api__call__limit, .api__saved__key {
+      margin-bottom: 20px;
+      
+      h2 {
+        @include h2-style-small();
+        margin: 20px 0 10px 0;
+        padding-left: 22px;
+      }
+      
+      h2:before {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
 }

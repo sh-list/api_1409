@@ -14,6 +14,8 @@
             
             <header class="header__api__wrapper">
                 
+            <div id="nav-trigger"> </div>                                
+                
                 <div class="api__logo__id">
                     <a href="index.html" class="list__logo__id" title="List Data Explorer"><h1>API</h1></a>
                 </div>
@@ -24,10 +26,14 @@
                     Log In
                 </button>
                 </div>
-                          
-            </header> <!--- header__api__wrapper class --->
+                                                          
+            </header> <!-- header__api__wrapper class -->
             
-            <nav class="main-navigation">
+                            <div class="key__area__wrapper">
+                                <input id="paste key search header" type="text" placeholder="paste key here" class="api__key__input" />
+                            </div>
+            
+            <nav class="main-navigation mobile-navigation">
                <ul>
                     <li><a href="search.html" class="api__search"> /search</a></li>
                     <li><a href="events.html" class="api__search"> /events</a></li>
@@ -43,13 +49,22 @@
                    <a href="https://www.list.co.uk/">The List</a>
                </div>               
             </nav>
-                        
+                                    
             
             <div class="content__container">
                 <h1>Filter events</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus quo animi earum facere dolores ratione nihil molestiae ab officia unde adipisci deserunt voluptate asperiores provident quibusdam quas delectus in.</p>
                 
                 <form class="api__search__form" novalidate="novalidate">
+                    
+<!--
+                        <div class="api__key__input__wrapper api__explore__key__wrapper">
+                            <input id="paste key search" type="text" placeholder="paste key here" class="api__key__input" />
+                        </div> 
+-->
+                        
+                        <!-- api__explore__key__wrapper div class -->                  
+                    
                     <div class="input__container">
                         <input id="event name" type="text" required="required" />
                         <label for="event name">event name</label>
@@ -62,19 +77,19 @@
                         <div class="input__underline"> </div>
                     </div>
                     
-                    <div class="input__container">
+                    <div class="input__container mod__date">
                         <input id="modified since" type="text" required="required" />
                         <label for="modified since">modified since</label>
                         <div class="input__underline"> </div>
                     </div>
                     
-                    <div class="input__container">
+                    <div class="input__container min__date">
                         <input id="min date" type="text" required="required" />
                         <label for="min date">min date</label>
                         <div class="input__underline"> </div>
                     </div>
                     
-                    <div class="input__container">
+                    <div class="input__container max__date">
                         <input id="max date" type="text" required="required" />
                         <label for="max date">max date</label>
                         <div class="input__underline"> </div>
@@ -87,9 +102,15 @@
             
             
             
-        </div> <!--- page__container div class --->
+        </div> <!-- page__container div class -->
         
-    </body>
-    
+<script>
+    document.getElementById("nav-trigger").addEventListener("click", function(){
+        //document.getElementById("mobile-navigation").style.left="0";
+        //alert("yay or nay");
+    }); 
+</script>
+
+    </body>    
     
 </html>

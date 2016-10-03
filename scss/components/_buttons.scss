@@ -47,12 +47,14 @@
 
 
 .button__wrapper {
-  align-self: flex-end;
+  //align-self: flex-end;
+  float: right;
 }
 
 
 .login__button {
   @include button-standard();
+  margin: 30px 0 0 0;
 }
 
 
@@ -85,6 +87,15 @@
 }
 
 
+.get__docs__button {
+  @include button-action();
+  
+  a {
+    color: $primary-color;
+  }  
+}
+
+
 .upgrade__button {
   @include button-standard();
   background-color: saturate(cadetblue, 30%);
@@ -108,8 +119,11 @@
   @include button-standard();
   background-color: $highlight-color;
   color: whitesmoke;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 100px;
   width: 100px;
+  //height: 32px;
   border-color: $highlight-color;
   
   &:hover {
@@ -124,8 +138,11 @@
   @include button-standard();
   background-color: indianred;
   color: whitesmoke;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 100px;
+  //height: 32px;
   //margin-left: 5px;
   border-color: indianred;
   
@@ -143,9 +160,21 @@
 @media only screen and (max-width: 767px) {
   .login__button {
     @include button-standard-small();
+    margin: 25px 0 0 0;
   }
   
   .get__key__button {
     @include button-action-small();
+  }
+  
+  .copy__button {
+    right: 65px;
+    width: 65px;
+    font-size: 0.8em;
+  }
+  
+  .revoke__button {
+    width: 65px;
+    font-size: 0.8em;
   }
 }

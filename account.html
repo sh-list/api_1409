@@ -15,6 +15,8 @@
             
             <header class="header__api__wrapper">
                 
+            <div id="nav-trigger"> </div>                                
+                
                 <div class="api__logo__id">
                     <a href="index.html" class="list__logo__id" title="List Data Explorer"><h1>API</h1></a>
                 </div>
@@ -26,7 +28,11 @@
                 </button>
                 </div>
                           
-            </header> <!--- header__api__wrapper class --->
+            </header> <!-- header__api__wrapper class -->
+            
+                            <div class="key__area__wrapper">
+                                <input id="paste key search header" type="text" placeholder="paste key here" class="api__key__input" />
+                            </div>            
             
             <nav class="main-navigation">
                <ul>
@@ -62,7 +68,7 @@
                             <button class="api__button upgrade__button"><span>Upgrade</span></button>                            
                         </div>
                         
-                    </div> <!--- api__usage__wrapper div class --->
+                    </div> <!-- api__usage__wrapper div class -->
                         
                         
                     <div class="api__keys__wrapper">
@@ -75,34 +81,38 @@
                             <progress value="600" max="1000" class="progress--usage key--usage"> </progress>
                             <span class="creation--date">creation date: 06.06.2016</span>
                             
-                            <input id="paste key" type="text" placeholder="paste your key here" class="api__key__input" />
-                            
-                            <button class="api__button revoke__button"><span>Revoke</span></button>
-                            <button class="api__button copy__button"><span>Copy</span></button>
-                            
+                            <div class="api__key__input__wrapper">                            
+                                <input id="paste key1" type="text" value="abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161" class="api__key__input" />
+                                
+                                <button class="api__button revoke__button"><span>Revoke</span></button>
+                                <button class="api__button copy__button"><span>Copy</span></button>
+                            </div> <!-- api__key__input__wrapper div class -->                            
                         </div> 
                         
                         <div class="api__saved__key">
                             <h3>User Key No.2.</h3>                      
                             <progress value="200" max="1000" class="progress--usage key--usage--1"> </progress>
                             <span class="creation--date">creation date: 08.10.2016</span>
-
-                            <input id="paste key" type="text" placeholder="paste your key here" class="api__key__input" />
                             
-                            <button class="api__button revoke__button"><span>Revoke</span></button>
-                            <button class="api__button copy__button"><span>Copy</span></button>
-                        </div>
+                            <div class="api__key__input__wrapper">
+                                <input id="paste key2" type="text" value="abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161abc123def456ghi789jkl101mno112pqr131stu415vyx161" class="api__key__input" />
+                                
+                                <button class="api__button revoke__button"><span>Revoke</span></button>
+                                <button class="api__button copy__button"><span>Copy</span></button>
+                            </div> <!-- api__key__input__wrapper div class -->
+                            
+                        </div> <!-- api__saved__key div class -->
                         
                         <button class="api__button get__key__button"><span>Get New Key</span></button>
                         
-                    </div>  <!--- api__keys__wrapper div class --->    
+                    </div>  <!-- api__keys__wrapper div class -->    
                                               
-                </div> <!--- api__account__wrapper div class --->             
+                </div> <!-- api__account__wrapper div class -->             
                 
             </div>
             
             
-        </div> <!--- page__container div class --->
+        </div> <!-- page__container div class -->
         
     </body>
 
